@@ -1,5 +1,8 @@
 {
   "extends": [
+    "prettier",
+    "prettier/react",
+    "eslint:recommended",
     "plugin:prettier/recommended",
     "plugin:react/recommended",
     "react-app"
@@ -20,11 +23,14 @@
     "commonjs": true,
     "node": true,
     "es6": true,
-    "jest": true,
-    "mocha": true
+    "jest": true
   },
   "rules": {
-      "prettier/prettier": "error",
+      "prettier/prettier": ["error", {
+        "useTabs": true,
+        "tabWidth": 2,
+        "singleQuote": true
+      }],
       "comma-dangle": [
         "error", "never"
       ],
@@ -36,12 +42,6 @@
         "specialLink": [ "hrefLeft", "hrefRight" ],
         "aspects": [ "noHref", "invalidHref", "preferButton" ]
       }],
-      "object-curly-newline": ["error", {
-        "ObjectExpression": "always",
-        "ObjectPattern": { "multiline": false },
-        "ImportDeclaration": "never",
-        "ExportDeclaration": "never"
-    }],
     "no-debugger": "off",
     "no-console": "off",
     "react/prop-types": "off",
