@@ -1,11 +1,19 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Example from './components/example';
+import { Provider } from 'react-redux';
+import AppRouting from './routing/routing';
+import getStore from './store/store';
 import './style/_base.scss';
 
 const root = document.getElementById('root');
 
-const jsx = <Example />;
+const store = getStore();
+
+const jsx = (
+  <Provider store={store}>
+    <AppRouting />
+  </Provider>
+);
 
 ReactDOM.render(jsx, root);
 
