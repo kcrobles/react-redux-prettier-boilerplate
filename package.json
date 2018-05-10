@@ -16,6 +16,7 @@
   "devDependencies": {
     "babel-eslint": "7.2.3",
     "enzyme": "^3.3.0",
+    "enzyme-adapter-react-16": "1.0.0",
     "eslint": "4.1.1",
     "eslint-config-prettier": "^2.9.0",
     "eslint-config-react-app": "^2.1.0",
@@ -29,6 +30,7 @@
     "live-server": "^1.2.0",
     "prettier": "^1.12.1",
     "raf": "^3.4.0",
+    "react-test-renderer": "16.0.0",
     "webpack-dev-server": "2.5.1"
   },
   "dependencies": {
