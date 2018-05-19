@@ -9,6 +9,5 @@ export default () =>
     combineReducers({
       defaultReducer
     }),
-    // applyMiddleware(thunk)
     composeEnhancers(applyMiddleware(thunk))
   );
