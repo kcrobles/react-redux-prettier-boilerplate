@@ -4,6 +4,7 @@ import { Provider } from 'react-redux';
 import AppRouting from './routing/routing';
 import getStore from './store/store';
 import './style/_base.scss';
+import { getAllAsync } from './actions/default';
 
 const root = document.getElementById('root');
 
@@ -14,8 +15,13 @@ const jsx = (
     <AppRouting />
   </Provider>
 );
+const renderApp = () => {
+  ReactDOM.render(jsx, root);
+};
 
-ReactDOM.render(jsx, root);
+store.dispatch(getAllAsync()).then(() => {
+  renderApp();
+});
 
 // {
 //     "root": true,

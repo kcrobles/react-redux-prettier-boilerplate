@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "first_name": "Matias",
+    "last_name": "Rojas",
+    "role": "Portal Development Manager",
+    "favorite_beer": "Porter"
+  },
+  {
+    "id": 2,
+    "first_name": "Nicolas",
+    "last_name": "Peralta",
+    "favorite_beer": "None",
+    "role": "Development Leader"
+  },
+  {
+    "id": 3,
+    "first_name": "Matias",
+    "last_name": "Franke",
+    "role": "Backend Developer Senior",
+    "favorite_beer": "Session IPA"
+  },
+  {
+    "id": 4,
+    "first_name": "Carolina",
+    "last_name": "Ruiz",
+    "role": "Backend Developer Senior",
+    "favorite_beer": "Honey"
+  },
+  {
+    "id": 5,
+    "first_name": "Juanceto",
+    "last_name": "Cruz",
+    "role": "Frontend Developer Senior",
+    "favorite_beer": "None"
+  },
+  {
+    "id": 6,
+    "first_name": "Nicolas",
+    "last_name": "Cartier",
+    "role": "Backend Developer Senior",
+    "favorite_beer": "Honey"
+  }
+]

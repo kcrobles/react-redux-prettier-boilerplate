@@ -1,17 +1,13 @@
-import { DEFAULT_ACTION } from '../actions/default';
+import { DEFAULT_ACTION, GET_ALL_NAVIANS } from '../actions/default';
 
 const defaultState = [];
 
 const defaultReducer = (state = defaultState, action) => {
   switch (action.type) {
     case DEFAULT_ACTION:
-      const message = action.payload.message
-        ? action.payload.message
-        : 'ACTION ERROR';
+      const message = action.payload.message;
       console.log(message);
       return { ...state, ...action.payload };
-    case 'OTHER_ACTION':
-      return state;
     default:
       return state;
   }

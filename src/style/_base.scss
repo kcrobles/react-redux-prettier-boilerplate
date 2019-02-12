@@ -9,10 +9,33 @@ div {
 
 .container {
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
+  font-family: "Open Sans", sans-serif;
 }
 .title {
-  margin-top: 50px;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  margin-top: 100px;
+  font-weight: 300;
   letter-spacing: 5px;
+  margin-bottom: 30px;
+  font-size: 40px;
+}
+ul.navians-list {
+  margin: 80px auto;
+  display:flex;
+  flex-direction: column;
+  list-style: none;
+  li {
+    text-align: left;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-transform: uppercase;
+    padding: 10px;
+    min-width: 400px;
+    font-size: 12px;
+    background-color: rgba(#c4c2c2, .2);
+    border: 1px solid rgba(160, 159, 159, 0.3);
+  }
 }
